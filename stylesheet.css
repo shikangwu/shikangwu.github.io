@@ -175,7 +175,8 @@ papertitle {
   list-style: none;
 }
 
-.news-venue {
+.news-venue,
+.news-paper {
   font-weight: 700;
 }
 
