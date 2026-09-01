@@ -189,6 +189,63 @@ papertitle {
   color: #444;
 }
 
+.experience-group {
+  margin: 0 0 16px 0;
+}
+
+.group-header,
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.group-header {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.group-period,
+.role-period {
+  flex: 0 0 auto;
+  color: #666;
+  white-space: nowrap;
+}
+
+.role-list {
+  margin-left: 10px;
+  padding-left: 14px;
+  border-left: 2px solid #eeeeee;
+}
+
+.role-item {
+  position: relative;
+  padding-top: 8px;
+}
+
+.role-item::before {
+  position: absolute;
+  top: 14px;
+  left: -19px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b8b8b8;
+  content: '';
+}
+
+.compact-role-list .role-item {
+  padding-top: 6px;
+}
+
+.education-heading {
+  margin-top: 18px;
+}
+
+.education-group .role-item {
+  padding-top: 6px;
+}
+
 .publication-list {
   padding: 10px 16px 10px 28px;
   margin: 0 20px 8px 20px;
@@ -349,6 +406,26 @@ body > table {
     width: 112px;
     height: 112px;
     max-width: 112px;
+  }
+
+  .group-header,
+  .role-header {
+    display: block;
+  }
+
+  .group-period,
+  .role-period {
+    display: block;
+    margin-top: 1px;
+  }
+
+  .role-list {
+    margin-left: 5px;
+    padding-left: 12px;
+  }
+
+  .role-item::before {
+    left: -17px;
   }
 
   .publication-list {
